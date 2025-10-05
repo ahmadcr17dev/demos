@@ -5603,8 +5603,6 @@
             background-repeat: no-repeat;
             background-position-x: calc(100% - 10px);
             background-position-y: center;
-            -webkit-appearance: none;
-            -moz-appearance: none;
             padding-right: 2em;
         }
 
@@ -5660,12 +5658,6 @@
         .woocommerce input[type=number].qty::-webkit-outer-spin-button {
             -webkit-appearance: none;
         }
-
-        .woocommerce-js input[type=number].qty {
-            -webkit-appearance: none;
-            -moz-appearance: textfield;
-        }
-
 
         .ast-onsale-card {
             position: absolute;
@@ -6122,11 +6114,15 @@ flexibility(document.documentElement);
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;family=Cormorant+Garamond:wght@700&amp;family=Playfair+Display:wght@700&amp;family=Source+Sans+Pro:wght@400&amp;family=Poppins:wght@700&amp;family=Lato:wght@400&amp;family=Montserrat:wght@700&amp;family=Lato:wght@400&amp;family=Rubik:wght@700&amp;family=Karla:wght@400&amp;family=Roboto+Condensed:wght@700&amp;family=Roboto:wght@400&amp;family=Merriweather:wght@700&amp;family=Inter:wght@400&amp;family=Vollkorn:wght@700&amp;family=Open+Sans:wght@400&amp;family=Open+Sans:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap">
     <script src="https://websitedemos.net/clothing-store-02/wp-includes/js/wp-emoji-release.min.js?ver=6.8.3"
         defer=""></script>
+    <script>
+        document.querySelectorAll('a').forEach(a => a.removeAttribute('href'));
+    </script>
+
 </head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope"
     class="home wp-singular page-template-default page page-id-12 wp-custom-logo wp-theme-astra theme-astra woocommerce-demo-store woocommerce-js ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.11.11 ast-single-post ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header elementor-default elementor-kit-4 elementor-page elementor-page-12 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit"
-    __processed_87bf0b3e-d6aa-42ea-8ca9-175befa1de24__="true" 
+    __processed_87bf0b3e-d6aa-42ea-8ca9-175befa1de24__="true"
     bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjI2Iiwic2NvcmUiOjIwMDI2fV0="
     data-elementor-device-mode="desktop" data-new-gr-c-s-check-loaded="14.1256.0" data-gr-ext-installed="">
     <!-- Google Tag Manager (noscript) -->
@@ -6170,21 +6166,24 @@ flexibility(document.documentElement);
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-22">
                                                                 <a href="https://websitedemos.net/clothing-store-02/?customize=template"
                                                                     aria-current="page" class="menu-link"
-                                                                    bis_skin_checked="1">Home</a></li>
+                                                                    bis_skin_checked="1">Home</a>
+                                                            </li>
                                                             <li id="menu-item-23"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
-                                                                <a href="#"
-                                                                    class="menu-link" bis_skin_checked="1">Shop</a></li>
+                                                                <a href="#" class="menu-link"
+                                                                    bis_skin_checked="1">Shop</a>
+                                                            </li>
                                                             <li id="menu-item-21"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21">
-                                                                <a href="#"
-                                                                    class="menu-link" bis_skin_checked="1">About Us</a>
+                                                                <a href="#" class="menu-link" bis_skin_checked="1">About
+                                                                    Us</a>
                                                             </li>
                                                             <li id="menu-item-20"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
-                                                                <a href="#"
-                                                                    class="menu-link" bis_skin_checked="1">Contact
-                                                                    Us</a></li>
+                                                                <a href="#" class="menu-link"
+                                                                    bis_skin_checked="1">Contact
+                                                                    Us</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </nav>
@@ -6202,10 +6201,8 @@ flexibility(document.documentElement);
                                         <div class="site-branding ast-site-identity"
                                             itemtype="https://schema.org/Organization" itemscope="itemscope"
                                             bis_skin_checked="1">
-                                            <span class="site-logo-img"><a
-                                                    href="https://websitedemos.net/clothing-store-02/?customize=template"
-                                                    class="custom-logo-link" rel="home" aria-current="page"
-                                                    bis_skin_checked="1"><img width="96" height="50"
+                                            <span class="site-logo-img"><a href="#" class="custom-logo-link" rel="home"
+                                                    aria-current="page" bis_skin_checked="1"><img width="96" height="50"
                                                         src="https://websitedemos.net/clothing-store-02/wp-content/uploads/sites/1447/2024/03/logo-01.svg"
                                                         class="custom-logo" alt="Clothing Store"
                                                         decoding="async"></a></span>
@@ -6581,7 +6578,8 @@ flexibility(document.documentElement);
                                                                                                             value="xs"
                                                                                                             class="attached enabled">
                                                                                                             XS</option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_size"
                                                                                                     bis_skin_checked="1">
@@ -6671,7 +6669,8 @@ flexibility(document.documentElement);
                                                                                                             class="attached enabled">
                                                                                                             White
                                                                                                         </option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_color"
                                                                                                     bis_skin_checked="1">
@@ -6846,7 +6845,8 @@ flexibility(document.documentElement);
                                                                                                             value="xs"
                                                                                                             class="attached enabled">
                                                                                                             XS</option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_size"
                                                                                                     bis_skin_checked="1">
@@ -6931,7 +6931,8 @@ flexibility(document.documentElement);
                                                                                                             value="red"
                                                                                                             class="attached enabled">
                                                                                                             Red</option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_color"
                                                                                                     bis_skin_checked="1">
@@ -7091,7 +7092,8 @@ flexibility(document.documentElement);
                                                                                                             value="xs"
                                                                                                             class="attached enabled">
                                                                                                             XS</option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_size"
                                                                                                     bis_skin_checked="1">
@@ -7172,7 +7174,8 @@ flexibility(document.documentElement);
                                                                                                             class="attached enabled">
                                                                                                             White
                                                                                                         </option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_color"
                                                                                                     bis_skin_checked="1">
@@ -7345,7 +7348,8 @@ flexibility(document.documentElement);
                                                                                                             value="xs"
                                                                                                             class="attached enabled">
                                                                                                             XS</option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_size"
                                                                                                     bis_skin_checked="1">
@@ -7435,7 +7439,8 @@ flexibility(document.documentElement);
                                                                                                             class="attached enabled">
                                                                                                             White
                                                                                                         </option>
-                                                                                                    </select></div>
+                                                                                                    </select>
+                                                                                                </div>
                                                                                                 <div class="cfvsw-swatches-container cfvsw-shop-container"
                                                                                                     swatches-attr="attribute_pa_color"
                                                                                                     bis_skin_checked="1">
@@ -8311,19 +8316,23 @@ flexibility(document.documentElement);
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-22">
                                                     <a href="https://websitedemos.net/clothing-store-02/?customize=template"
                                                         aria-current="page" class="menu-link"
-                                                        bis_skin_checked="1">Home</a></li>
+                                                        bis_skin_checked="1">Home</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
                                                     <a href="https://websitedemos.net/clothing-store-02/shop/?customize=template"
-                                                        class="menu-link" bis_skin_checked="1">Shop</a></li>
+                                                        class="menu-link" bis_skin_checked="1">Shop</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21">
                                                     <a href="https://websitedemos.net/clothing-store-02/about-us/?customize=template"
-                                                        class="menu-link" bis_skin_checked="1">About Us</a></li>
+                                                        class="menu-link" bis_skin_checked="1">About Us</a>
+                                                </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
                                                     <a href="https://websitedemos.net/clothing-store-02/contact-us/?customize=template"
-                                                        class="menu-link" bis_skin_checked="1">Contact Us</a></li>
+                                                        class="menu-link" bis_skin_checked="1">Contact Us</a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </nav>
@@ -8396,15 +8405,18 @@ flexibility(document.documentElement);
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
                                                 <a href="https://websitedemos.net/clothing-store-02/shop/?customize=template"
-                                                    class="menu-link" bis_skin_checked="1">Shop</a></li>
+                                                    class="menu-link" bis_skin_checked="1">Shop</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21">
                                                 <a href="https://websitedemos.net/clothing-store-02/about-us/?customize=template"
-                                                    class="menu-link" bis_skin_checked="1">About Us</a></li>
+                                                    class="menu-link" bis_skin_checked="1">About Us</a>
+                                            </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
                                                 <a href="https://websitedemos.net/clothing-store-02/contact-us/?customize=template"
-                                                    class="menu-link" bis_skin_checked="1">Contact Us</a></li>
+                                                    class="menu-link" bis_skin_checked="1">Contact Us</a>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </section>
@@ -8422,16 +8434,20 @@ flexibility(document.documentElement);
                                         <ul id="menu-categories" class="menu">
                                             <li id="menu-item-219"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-219">
-                                                <a href="#" class="menu-link">Casual</a></li>
+                                                <a href="#" class="menu-link">Casual</a>
+                                            </li>
                                             <li id="menu-item-220"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-220">
-                                                <a href="#" class="menu-link">Work &amp; Office</a></li>
+                                                <a href="#" class="menu-link">Work &amp; Office</a>
+                                            </li>
                                             <li id="menu-item-221"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-221">
-                                                <a href="#" class="menu-link">Activewear</a></li>
+                                                <a href="#" class="menu-link">Activewear</a>
+                                            </li>
                                             <li id="menu-item-222"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222">
-                                                <a href="#" class="menu-link">Evening Dresses</a></li>
+                                                <a href="#" class="menu-link">Evening Dresses</a>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </section>
@@ -8449,16 +8465,20 @@ flexibility(document.documentElement);
                                         <ul id="menu-resources" class="menu">
                                             <li id="menu-item-224"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224">
-                                                <a href="#" class="menu-link">Contact Support</a></li>
+                                                <a href="#" class="menu-link">Contact Support</a>
+                                            </li>
                                             <li id="menu-item-225"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225">
-                                                <a href="#" class="menu-link">FAQ</a></li>
+                                                <a href="#" class="menu-link">FAQ</a>
+                                            </li>
                                             <li id="menu-item-226"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-226">
-                                                <a href="#" class="menu-link">Live Chat</a></li>
+                                                <a href="#" class="menu-link">Live Chat</a>
+                                            </li>
                                             <li id="menu-item-227"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-227">
-                                                <a href="#" class="menu-link">Returns</a></li>
+                                                <a href="#" class="menu-link">Returns</a>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </section>
@@ -8476,16 +8496,20 @@ flexibility(document.documentElement);
                                         <ul id="menu-social-media" class="menu">
                                             <li id="menu-item-228"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-228">
-                                                <a href="#" class="menu-link">Facebook</a></li>
+                                                <a href="#" class="menu-link">Facebook</a>
+                                            </li>
                                             <li id="menu-item-229"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-229">
-                                                <a href="#" class="menu-link">Twitter</a></li>
+                                                <a href="#" class="menu-link">Twitter</a>
+                                            </li>
                                             <li id="menu-item-230"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230">
-                                                <a href="#" class="menu-link">Instagram</a></li>
+                                                <a href="#" class="menu-link">Instagram</a>
+                                            </li>
                                             <li id="menu-item-231"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231">
-                                                <a href="#" class="menu-link">Pinterest</a></li>
+                                                <a href="#" class="menu-link">Pinterest</a>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </section>
@@ -8678,7 +8702,8 @@ flexibility(document.documentElement);
                                                         <span class="heading-font-preview"
                                                             style="font-family: &quot;Roboto Condensed&quot;; font-weight: 700;">A</span><span
                                                             class="body-font-preview"
-                                                            style="font-family: Roboto; font-weight: 400;">a</span></li>
+                                                            style="font-family: Roboto; font-weight: 400;">a</span>
+                                                    </li>
                                                     <div class="text-[#ffffff] opacity-0 invisible group-hover:opacity-100 group-hover:visible stc-tooltip-content py-1.5 px-3 absolute right-0 top-[110%] z-100 bg-gray-800 font-normal leading-none text-center min-w-max rounded-sm text-xs shadow-typoTooltip "
                                                         bis_skin_checked="1">Roboto Condensed / Roboto</div>
                                                 </div>
