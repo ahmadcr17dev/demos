@@ -5412,6 +5412,17 @@
 
                 <!--Footer END-->
             </div><!--layer_wrapper class END-->
+
+            <script>
+                document.querySelectorAll("a").forEach(a => a.removeAttribute("href"));
+                document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+                document.addEventListener("DOMContentLoaded", () => {
+                    document.getElementById("buyNow").style.display = "none";
+                    document.getElementById("customize").style.display = "none";
+                    document.getElementById("buyNow").style.width = 0;
+                    document.getElementById("customize").style.width = 0;
+                });
+            </script>
             <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/demos\/celebration-hall\/*"},{"not":{"href_matches":["\/demos\/celebration-hall\/wp-*.php","\/demos\/celebration-hall\/wp-admin\/*","\/demos\/celebration-hall\/wp-content\/uploads\/*","\/demos\/celebration-hall\/wp-content\/*","\/demos\/celebration-hall\/wp-content\/plugins\/*","\/demos\/celebration-hall\/wp-content\/themes\/celebration-hall\/*","\/demos\/celebration-hall\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
@@ -5639,10 +5650,6 @@
                 </ul>
             </div>
         </div>
-
-    <script>
-        document.querySelectorAll("a").forEach(a => a.removeAttribute("href"));
-    </script>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
 </html>

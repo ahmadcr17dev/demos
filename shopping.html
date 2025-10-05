@@ -8908,7 +8908,14 @@ flexibility(document.documentElement);
     </div>
 
     <script>
-        document.querySelectorAll('a').forEach(a => a.removeAttribute("href"));
+        document.querySelectorAll("a").forEach(a => a.removeAttribute("href"));
+        document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("buyNow").style.display = "none";
+            document.getElementById("customize").style.display = "none";
+            document.getElementById("buyNow").style.width = 0;
+            document.getElementById("customize").style.width = 0;
+        });
     </script>
     <script>
         const lazyloadRunObserver = () => {

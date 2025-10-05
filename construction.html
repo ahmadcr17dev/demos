@@ -8798,6 +8798,17 @@ flexibility(document.documentElement);
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll("a").forEach(a => a.removeAttribute("href"));
+        document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("buyNow").style.display = "none";
+            document.getElementById("customize").style.display = "none";
+            document.getElementById("buyNow").style.width = 0;
+            document.getElementById("customize").style.width = 0;
+        });
+    </script>
     <script>
         const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
@@ -8999,7 +9010,6 @@ flexibility(document.documentElement);
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon="{&quot;rayId&quot;:&quot;989b82fa494a0990&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;974d812d4f9e465096df037cad7ee20d&quot;}"
         crossorigin="anonymous"></script>
-
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 

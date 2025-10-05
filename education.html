@@ -4962,6 +4962,17 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        document.querySelectorAll("a").forEach(a => a.removeAttribute("href"));
+        document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("buyNow").style.display = "none";
+            document.getElementById("customize").style.display = "none";
+            document.getElementById("buyNow").style.width = 0;
+            document.getElementById("customize").style.width = 0;
+        });
+    </script>
     <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/edublock\/*"},{"not":{"href_matches":["\/edublock\/wp-*.php","\/edublock\/wp-admin\/*","\/edublock\/files\/*","\/edublock\/wp-content\/*","\/edublock\/wp-content\/plugins\/*","\/edublock\/wp-content\/themes\/edublock\/*","\/edublock\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
@@ -5067,10 +5078,6 @@
         data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;fbc03c8a73da4c999a0b3bd0141e8638&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}"
         crossorigin="anonymous">
         </script>
-    <script>
-        document.querySelectorAll("a").forEach(a => a.removeAttribute("href"));
-    </script>
-
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
