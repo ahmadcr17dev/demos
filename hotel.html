@@ -6026,6 +6026,10 @@ flexibility(document.documentElement);
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('a').forEach(a => a.removeAttribute("href"));
+    </script>
     <script>
         const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
