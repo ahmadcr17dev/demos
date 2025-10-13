@@ -9,4 +9,4 @@ https://ahmadcr17dev.github.io/demos/hotel.html
 https://ahmadcr17dev.github.io/demos/shoe.html
 https://ahmadcr17dev.github.io/demos/shopping.html
 https://ahmadcr17dev.github.io/demos/wedding.html
-https://ahmadcr17dev.github.io/demos/wedding.html
+https://ahmadcr17dev.github.io/demos/realestate.html
